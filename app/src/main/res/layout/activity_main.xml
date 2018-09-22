@@ -15,7 +15,6 @@
             android:layout_marginLeft="20dp"
             android:textSize="20sp"
             android:text="Enter your username: "
-
     />
 
     <EditText
@@ -28,7 +27,7 @@
             android:paddingLeft="2dp"
             android:autoSizeTextType="uniform"
             android:hint="Username"
-            android:gravity="center"/>
+            android:gravity="center" />
 
     <TextView
             android:id="@+id/textPw"
@@ -71,5 +70,14 @@
             android:text="No account? Sign up here."
             android:layout_centerHorizontal="true"
     />
+
+    <Button
+            android:id="@+id/tryButton"
+            android:layout_below="@id/signUpText"
+            android:layout_height="wrap_content"
+            android:layout_width="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="clicckkk" />
 
 </RelativeLayout>

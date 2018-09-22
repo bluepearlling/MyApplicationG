@@ -31,10 +31,12 @@ public class HomePage extends AppCompatActivity
     }
 
 
-    private class fetchData extends AsyncTask<Void, Void, String> {
+    private class fetchData extends AsyncTask<Void, Void, String>
+    {
 
         @Override
-        protected String doInBackground(Void... params) {
+        protected String doInBackground(Void... params)
+        {
             // These two need to be declared outside the try/catch
             // so that they can be closed in the finally block.
             HttpURLConnection urlConnection = null;
@@ -97,7 +99,8 @@ public class HomePage extends AppCompatActivity
         }
 
         @Override
-        protected void onPostExecute(String s) {
+        protected void onPostExecute(String s)
+        {
             super.onPostExecute(s);
             httpResult.setText(s);
             Log.i("json", s);
